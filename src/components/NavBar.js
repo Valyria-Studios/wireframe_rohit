@@ -1,19 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './NavBar.css';
+import { NavLink } from 'react-router-dom';
+import './NavBar.css'; 
 
 function NavBar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/leaderboard">Leaderboard</Link>
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <NavLink exact to="/" className="navbar-link" activeClassName="active">
+            Home
+          </NavLink>
         </li>
-        <li>
-          <Link to="/waste-distribution">Waste Distribution</Link>
+        <li className="navbar-item">
+          <NavLink to="/leaderboard" className="navbar-link" activeClassName="active">
+            Leaderboard
+          </NavLink>
         </li>
-        <li>
-          <Link to="/impact-stats">Impact Stats</Link>
+        <li className="navbar-item">
+          <NavLink to="/waste-distribution" className="navbar-link" activeClassName="active">
+            Waste Distribution
+          </NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink to="/impact-stats" className="navbar-link" activeClassName="active">
+            Impact Stats
+          </NavLink>
         </li>
       </ul>
     </nav>
