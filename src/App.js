@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PointsAndLeaderboard from './pages/PointsAndLeaderboard';
 import WasteDistribution from './pages/WasteDistribution';
-import ImpactStatsPage from './pages/ImpactStatsPage';
+import ImpactStatsPage from './pages/ImpactStats';
 import NavBar from './components/NavBar';  
 function App() {
   return (
