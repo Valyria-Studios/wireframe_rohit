@@ -1,29 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './NavBar.css'; 
 
 function NavBar() {
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
-        <li className="navbar-item">
-          <NavLink exact to="/" className="navbar-link" activeClassName="active">
-            Home
-          </NavLink>
-        </li>
-        <li className="navbar-item">
-          <NavLink to="/leaderboard" className="navbar-link" activeClassName="active">
+    <nav className="bg-gray-800 text-white p-4">
+      <ul className="flex justify-around">
+        <li>
+          <NavLink to="/" exact activeClassName="text-green-400" className="hover:text-green-300">
             Leaderboard
           </NavLink>
         </li>
-        <li className="navbar-item">
-          <NavLink to="/waste-distribution" className="navbar-link" activeClassName="active">
-            Waste Distribution
+        <li>
+          <NavLink to="/impact-stats" activeClassName="text-green-400" className="hover:text-green-300">
+            Impact Stats
           </NavLink>
         </li>
-        <li className="navbar-item">
-          <NavLink to="/impact-stats" className="navbar-link" activeClassName="active">
-            Impact Stats
+        <li>
+          <NavLink to="/waste-distribution" activeClassName="text-green-400" className="hover:text-green-300">
+            Waste Distribution
           </NavLink>
         </li>
       </ul>
